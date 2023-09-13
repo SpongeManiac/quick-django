@@ -5,7 +5,7 @@ Quickly serve a Django project as a Docker container and allow live development
 To use `quick-django`, you will need to prepare a workspace and your django project.
 
 ## Workspace Prep
-Find a suitable place to serve your django project and static files as `www-data` user. In this guide, we will use the path `/var/django/myproject`. Where you put your project and static files does not matter, however you will need to change your configs to reflect these locations. 
+Find a suitable place to serve your django project and static files as `www-data` user. In this guide, we will use the path `/var/django/myproject`. Where you put your project and static files does not matter, however you will need to ensure permissions are properly configured along with other configs to reflect these locations. 
 
 Start by creating some directories (We will set proper permissions later):
 ```shell
