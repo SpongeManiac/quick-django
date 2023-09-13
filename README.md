@@ -36,7 +36,7 @@ _/var/django/myproject/app/myproject/settings.py_
 ```python
 ...
 
-STATIC_ROOT = '/var/www/static/'
+STATIC_ROOT = '/var/www/static'
 
 ...
 ```
