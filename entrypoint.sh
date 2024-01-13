@@ -8,5 +8,12 @@ if $AUTO_COLLECT
 then
   python3 /django/manage.py collectstatic --noinput
 fi
-# run server
-python3 /django/manage.py runserver $IP_PORT
+
+if $CUSTOM_ENTRY
+then
+  echo $ENTRY
+  eval $ENTRY
+else
+  echo "python3"
+  python3 /django/manage.py runserver $IP_PORT
+fi
