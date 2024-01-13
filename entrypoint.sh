@@ -11,7 +11,7 @@ fi
 
 if $CUSTOM_ENTRY
 then
-  echo $ENTRY
+  echo "custom"
   eval $ENTRY
 else
   echo "python3"
