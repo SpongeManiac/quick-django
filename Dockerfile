@@ -12,6 +12,9 @@ ENV IP_PORT=0.0.0.0:8080
 ENV STATIC_DIR=static
 #collect static files on start
 ENV AUTO_COLLECT=false
+#use custom entry
+ENV CUSTOM_ENTRY=false
+ENV ENTRY=''
 
 #install dependencies
 RUN apk add --update --no-cache python3
